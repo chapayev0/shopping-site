@@ -6,20 +6,25 @@
 // If user clicks the register button
   // if(isset($_POST["register-btn"])){
         // Get form input data
-          $name = $_POST["user_name"];		
+      $name = $_POST["user_name"];		
 		  $email = $_POST["email"];
 		  $phone = $_POST["phone"];
 		  $pssw = $_POST["pass"];
 		  $rep_passw = $_POST["rep_pass"];
+      $user_type = $_POST["user_type"];
+      $user_id = 1;
+
+      
 
 
-    if($pass != $reg_pass){
+    if($pssw != $rep_passw){
          echo 'passwords incorrect';
     }
     else{
         
         
-    $sql = mysqli_query($conn,"INSERT INTO user (user_name, user_mail, user_phone, user_pass, user_id) VALUES ('$user_name','$add','$mobile','$pass')");
+    $sql = mysqli_query($conn,"INSERT INTO user (user_name, user_mail, user_phone, user_pass, user_id, user_type) VALUES ('$name','$email','$phone','$pssw', '$user_id', '$user_type')");
+    echo 'acount registered';
 	
 	if($sql){
 		header("location: hi.html?err-failedstmt");
