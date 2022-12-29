@@ -14,12 +14,15 @@
             <p>Please enter your credentials to login.</p>
           </div>
         </div>
-        <form class="login-form">
+
+        <form class="login-form" method="post" action="actions/register.php">
+
           <input type="text" name="user_name" placeholder="username"/>
           <input type="text" name="email" placeholder="Emai"/>
           <input type="text" name="phone" placeholder="Phone Number"/>
           <input type="password" name="pass" placeholder="password"/>
-	  <input type="password" name="rep_pass" placeholder="Re-type password"/>
+	        <input type="password" name="rep_pass" placeholder="Re-type password"/>
+
           <button>Register</button>
           
         </form>
