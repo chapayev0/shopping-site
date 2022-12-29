@@ -12,7 +12,7 @@
 		  $pssw = $_POST["pass"];
 		  $rep_passw = $_POST["rep_pass"];
       $user_type = $_POST["user_type"];
-      $user_id = 1;
+      $user_id;
 
       
 
@@ -27,7 +27,7 @@
     echo 'acount registered';
 	
 	if($sql){
-		header("location: hi.html?err-failedstmt");
+		header("location: /shopping-site/reg_success.html");
 	}
 	else{   
 		   header("location: hi.html?err-noerrors");

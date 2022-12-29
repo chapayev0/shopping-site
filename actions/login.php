@@ -2,7 +2,7 @@
 // Add DB file
    include "db.php";
 
-   $sql = "SELECT * FROM users";
+   $sql = "SELECT * FROM user";
    $result = $conn->query($sql);
 
   
@@ -16,7 +16,27 @@
         // output data of each row
         while($row = $result->fetch_assoc()) {
 
-            echo "id: " . $row["user_name"]. " - Name: " . $row["user_mail"]. " " . $row["user_phone"]. "<br>";
+            if ($row["user_name"] == $name and $row["user_pass"] == $pssw){
+
+                if ($row["user_type"] == "Seller Account"){
+
+                    header("location: /shopping-site/home.html");
+
+                }else{
+
+                    header("location: /shopping-site/home.html");
+
+
+                }
+
+
+
+
+                
+
+
+            }
+
         }
     } else {
         echo "0 results";
