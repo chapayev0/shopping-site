@@ -20,11 +20,11 @@
 
                 if ($row["user_type"] == "Seller Account"){
 
-                    header("location: /shopping-site/home.html");
+                    header("location: /shopping-site/seller_page.html");
 
                 }else{
 
-                    header("location: /shopping-site/home.html");
+                    header("location: /shopping-site/buyer_page.html");
 
 
                 }
