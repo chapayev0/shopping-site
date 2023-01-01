@@ -41,8 +41,8 @@ header a img{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  background-color: #3d2a99;
+  background-image: linear-gradient(45deg,#5051a2,#2e0e99);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -58,7 +58,8 @@ header a img{
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  background-image: ;
+  color: #12044f;
   text-decoration: none;
 }
 
@@ -70,8 +71,8 @@ header a img{
 }
 
 body {
-  background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  background-color: #3d2a99;
+  background-image: linear-gradient(45deg,#5051a2,#2e0e99);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

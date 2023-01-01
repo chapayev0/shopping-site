@@ -2,29 +2,50 @@
 // Add DB file
    include "db.php";
 
+   $sql = "SELECT * FROM user";
+   $result = $conn->query($sql);
+
   
-// If user clicks the register button
-  // if(isset($_POST["register-btn"])){
-        // Get form input data
-          $name = $_POST["user_name"];		
-		  $pssw = $_POST["pass"];
+
+    $name = $_POST["user_name"];		
+	$pssw = $_POST["pass"];
+
+
+    
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+
+            if ($row["user_name"] == $name and $row["user_pass"] == $pssw){
+
+                if ($row["user_type"] == "Seller Account"){
+
+                    header("location: /shopping-site/seller_page.html");
+
+                }else{
+
+                    header("location: /shopping-site/buyer_page.html");
+
+
+                }
 
 
 
-    if($pass != $reg_pass){
-         echo 'passwords incorrect';
+
+                
+
+
+            }
+
+        }
+    } else {
+        echo "0 results";
     }
-    else{
-        
-	
-	if($sql){
-		header("location: hi.html?err-failedstmt");
-	}
-	else{   
-		   header("location: hi.html?err-noerrors");
-	}
+    $conn->close();
 
-    }
+
+
+  
 
 		  
 		 

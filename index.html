@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<title> CSS Login Screen Tutorial </title>
+<title>Preficient Store</title>
 </head>
 <body>
   <body>
@@ -14,12 +14,13 @@
             <p>Please enter your credentials to login.</p>
           </div>
         </div>
-        <form class="login-form">
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
+        <form class="login-form" method="post" action="actions/login.php">
+          
+          <input type="text" name="user_name" placeholder="username"/>
+          <input type="password" name="pass" placeholder="password"/>
           <button>login</button>
-          <p class="message">Not registered? <a href="/register.html">Create an account</a></p>
-        </form>
+          <p class="message">Not registered? <a href="register.html">Create an account</a></p>
+          
       </div>
     </div>
 </body>
