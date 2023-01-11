@@ -28,14 +28,18 @@
 
 
                 }
-
+            
 
 
 
                 
 
 
+            }else{
+
+                header("location: /shopping-site/log_fail.html");
             }
+
 
         }
     } else {
