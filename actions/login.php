@@ -20,7 +20,7 @@
 
                 if ($row["user_type"] == "Seller Account"){
 
-                    header("location: /shopping-site/seller_page.html");
+                    header("location: /shopping-site/admin.html");
 
                 }else{
 
