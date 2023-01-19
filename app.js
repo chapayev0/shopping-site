@@ -27,3 +27,11 @@ function removeCartItem(itemId) {
   cartItems.removeChild(i);
   delete cart[cart.indexOf(itemId)];
 }
+
+$(window).scroll(function() {
+      if ($(this).scrollTop() > 1){
+      $('.header').addClass('sticky');
+      }
+      else{
+      $('.header').removeClass('sticky');
+      }
