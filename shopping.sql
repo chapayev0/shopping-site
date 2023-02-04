@@ -40,9 +40,9 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `item_name`, `item_image`, `discription`, `price`) VALUES
-(1, 'Dell Inspiron 3520 ? i5', 'https://www.laptop.lk/wp-content/uploads/2023/01/Dell-Inspiron-3520.jpg', '? Intel Core i5 ? 1235U Processor\r\n? 8GB DDR4 RAM\r\n? 512GB M.2 SSD\r\n? 15.6&#8243;, FHD, 120Hz Refresh Rate Display\r\n? Intel Iris XE Graphics\r\n? Platinum Silver\r\n? Windows 11 Home\r\n? Office Home and Student 2021', '299,000.00'),
-(2, 'Lenovo IdeaPad Gaming 3 ? 15ACH6 (R5)', 'https://www.laptop.lk/wp-content/uploads/2022/11/4444444.jpg', '?  AMD Ryzen 5 ? 5600H Processor\r\n?  1TB HDD + 256GB SSD\r\n?  8GB DDR4-3200 RAM\r\n?  4GB NVIDIA GeForce GTX 1650 Graphics\r\n?  15.6&#8243;, FHD, IPS, 120Hz Refresh Rate Display\r\n?  Windows 11 Home\r\n?  Shadow Grey Color\r\n\r\n*Free Idaepad Gaming Back Pack\r\n*Free M100 Gaming Mouse', '348,000.00'),
-(3, 'Dell Inspiron 3511 (i7)', 'https://www.laptop.lk/wp-content/uploads/2022/05/Dell-Inspiron-3511-1.jpg', '*Special Price*</br>\r\nRs367,000/-\r\n</br>\r\n? Intel Core i7 11th Gen Processor</br>\r\n? 512GB NVMe SSD</br>\r\n? 8GB DDR4 RAM</br>\r\n? 2GB MX350 Geforce Nvidia Graphics</br>\r\n? 15.6&#8243; FHD Display</br>\r\n? Windows 11 Home</br>\r\n? Silver Color</br>\r\n? Office Home & Student 2019</br>', '367,000.00');
+(1, 'Dell Inspiron 3520 i5', 'https://www.laptop.lk/wp-content/uploads/2023/01/Dell-Inspiron-3520.jpg', 'Intel Core i5 1235U Processor\r\n 8GB DDR4 RAM\r\n 512GB M.2 SSD\r\n 15.6&#8243;, FHD, 120Hz Refresh Rate Display\r\n Intel Iris XE Graphics\r\n Platinum Silver\r\n Windows 11 Home\r\n Office Home and Student 2021', '299,000.00'),
+(2, 'Lenovo IdeaPad Gaming 3 15ACH6 (R5)', 'https://www.laptop.lk/wp-content/uploads/2022/11/4444444.jpg', ' AMD Ryzen 5 5600H Processor\r\n  1TB HDD + 256GB SSD\r\n  8GB DDR4-3200 RAM\r\n  4GB NVIDIA GeForce GTX 1650 Graphics\r\n  15.6&#8243;, FHD, IPS, 120Hz Refresh Rate Display\r\n  Windows 11 Home\r\n  Shadow Grey Color\r\n\r\n *Free Idaepad Gaming Back Pack\r\n *Free M100 Gaming Mouse', '348,000.00'),
+(3, 'Dell Inspiron 3511 (i7)', 'https://www.laptop.lk/wp-content/uploads/2022/05/Dell-Inspiron-3511-1.jpg', '*\r\nRs367,000/-\r\n Intel Core i7 11th Gen Processor</br>\r\n 512GB NVMe SSD</br>\r\n 8GB DDR4 RAM</br>\r\n 2GB MX350 Geforce Nvidia Graphics</br>\r\n 15.6&#8243; FHD Display</br>\r\n Windows 11 Home</br>\r\n Silver Color</br>\r\n Office Home & Student 2019</br>', '367,000.00');
 
 -- --------------------------------------------------------
 
